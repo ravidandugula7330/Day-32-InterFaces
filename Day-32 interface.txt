@@ -1,0 +1,84 @@
+Day-32 interface
+
+22/11/2025
+
+Interfaces:
+
+Definition: 
+1.	specifications to a set of classes.
+2.	any service requirement specification is called as an interface(SRS).
+3.	Contract between client and service provider is called as an interface.
+4.	inside interface every method is always abstract whether we are declaring or not. Hence interface is considered as 100% pure abstract class.
+100 % pure abstract class method
+
+Summary Definition:
+
+Specification to set of classes or any service requirement specification or contact between client and service provider or 100% pure abstract classes is considered as an interface.
+
+Declaration and implementation of an interface:
+
+Declaration:
+
+interface interface-name{
+abstract methods;
+variables;
+}
+
+// every method is always public and abstract by default.
+// every variable is public, static and final by default.
+
+Interface Implementation:
+
+public class class-name implements interface-name {
+// provide implementation all abstract methods.
+// optional-- non-abstract methods.
+
+}
+
+extends vs implements:
+
+1.	a class can extends only one class at a time.
+2.	a class can implement any no of interfaces at a time.
+
+Example:
+public interface One{
+}
+public interface Two{
+}
+class Hello implements One, Two{
+}
+
+3. a class can extends a class and can implement any no.of interfaces at a time.
+
+Example:
+
+public class A{
+}
+interface B{
+}
+interface C{
+}
+public class D extends A implements B,C{
+}
+
+4. an interface can extends any no of interfaces at time.
+
+interface X{
+}
+interface Y{
+}
+interface Z{
+}
+interface A extends X,Y,Z{
+}
+
+
+
+Which of the following is true?
+
+1.	A class can extends any no of classes at a time.
+2.	An interface can extend only one interface at a time.
+3.	A class can implement only one interface at a time.
+4.	A class can extend a class and can implement an interface but not both simultaneously.
+5.	An interface can implement any no of interfaces at a time.
+6.	None of the above.
